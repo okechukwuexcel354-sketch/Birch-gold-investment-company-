@@ -1,11 +1,11 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
 
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-header { background: #222; color: #fff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
-header .logo { font-weight: bold; font-size: 18px; display: flex; align-items: center; }
-nav a { color: #fff; margin-left: 15px; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-.container { padding: 20px; }
-.card { background: #fff; padding: 20px; margin: auto; max-width: 600px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
-footer { text-align: center; padding: 15px; background: #222; color: #fff; margin-top: 20px; }
-.btn { background: #b88700; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
-.btn:hover { background: #a67c00; }
+/*Gold-themed realistic background*/
+background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)
+                           url('https://images.unsplash.com/photo-1616401784845-5e8d68aa1f38')
+                           background-size: cover;
+       color: #fff;
+}
