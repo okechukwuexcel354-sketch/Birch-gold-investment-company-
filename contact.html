@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Brich Gold Investment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="assets/logo.png" alt="Logo" style="height:30px;vertical-align:middle;margin-right:8px;">
+    Brich Gold Investment
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="plans.html">Plans</a>
+    <a href="payment.html">Payment</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Register Deposit / Contact</h2>
+      <form onsubmit="return goToDashboard(event)">
+        <label>Choose Plan</label><br>
+        <select id="plan">
+          <option value="500">Growth - $500</option>
+          <option value="700">Premium - $700</option>
+          <option value="1000">Elite - $1000</option>
+        </select><br><br>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    function goToDashboard(e){
+      e.preventDefault();
+      const amount = document.getElementById('plan').value;
+      window.location.href = 'dashboard.html?amount=' + encodeURIComponent(amount);
+    }
+  </script>
+<footer>Brich Gold Investment — Not financial advice.</footer>
+</body>
+</html>
